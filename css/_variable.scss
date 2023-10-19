@@ -1,0 +1,17 @@
+$primary:#2E5180;
+$dark-gray:#333333;
+$mid-gray:#707F89;
+$gray:#CDD6DD;
+$light-gray:#EEF4F8;
+$white:#ffffff;
+
+// breakpoint
+$sp: 575px;
+$tab: 760px;
+$pc: 880px;
+
+@mixin media ($breakpoint) {
+  @media (min-width:$breakpoint) {
+    @content;
+  }
+}
