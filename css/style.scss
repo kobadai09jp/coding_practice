@@ -9,7 +9,16 @@ a {
     opacity: 0.8;
   }
 }
+
+.container {
+  width: 83.3%;
+  margin: 0 auto;
+}
+
 .header {
+  @include flexPrimary(row);
+  padding: 15px 0;
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -34,6 +43,25 @@ a {
 	outline: 0;
 	border: none;
 	background: none;
+  cursor: pointer;
+  color: $primary;
+  width: 20px;
+  height: 14px;
+
+  &::before,
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateY(5px);
+  }
+
+  &::before {
+    transform: translateY(-5px);
+    box-shadow: 0 6px currentColor;
+  }
+
 	&__sponly {
 		border: 0;
 		clip: rect(0 0 0 0);

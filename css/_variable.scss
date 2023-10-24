@@ -5,10 +5,20 @@ $gray:#CDD6DD;
 $light-gray:#EEF4F8;
 $white:#ffffff;
 
+// flexbox
+@mixin flexPrimary ($direction) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $direction;
+}
+
 // breakpoint
 $sp: 575px;
 $tab: 760px;
 $pc: 880px;
+
+
 
 @mixin media ($breakpoint) {
   @media (min-width:$breakpoint) {
