@@ -15,6 +15,7 @@ a {
   margin: 0 auto;
 }
 
+// header start
 .header {
   @include flexPrimary(row);
   padding: 15px 0;
@@ -74,5 +75,37 @@ a {
 	}
 
 }
+}
+// header end
+
+.hero__wrapper {
+  position: relative;
+  &__img {
+
+    img {
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    color: $primary;
+    text-align: center;
+    @include flexPrimary(column);
+    justify-content: center;
+    height: 130px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    p {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+  }
 }
 }
