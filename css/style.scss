@@ -2,7 +2,7 @@
 @import "./reset";
 
 .book-1 {
-font-family: "Noto Sans JP",sans-serif;
+font-family: "源ノ角ゴシック JP";
 a {
   color:inherit;
   &:hover {
@@ -11,7 +11,7 @@ a {
 }
 
 .container {
-  width: 83.3%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -77,11 +77,11 @@ a {
 }
 }
 // header end
-
+// hero start
 .hero__wrapper {
   position: relative;
   &__img {
-
+    
     img {
       height: 400px;
       object-fit: cover;
@@ -107,5 +107,24 @@ a {
       margin-top: 10px;
     }
   }
+}
+// hero end
+.feature__wrapper {
+  background-color: $primary;
+
+  &__textbox {
+    color: $white;
+    text-align: center;
+    padding: 65px 0;
+    h2 {
+      font-size:24px;
+      line-height: 1.5;
+    }
+    p {
+      margin-top: 35px;
+    }
+
+  }
+
 }
 }

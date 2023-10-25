@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -105,7 +106,7 @@
 }
 
 .book-1 {
-  font-family: "Noto Sans JP",sans-serif;
+  font-family: "源ノ角ゴシック JP";
 }
 
 .book-1 a {
@@ -117,7 +118,7 @@
 }
 
 .book-1 .container {
-  width: 83.3%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -249,5 +250,24 @@
 .book-1 .hero__wrapper__text h1 {
   font-size: 25px;
   margin-top: 10px;
+}
+
+.book-1 .feature__wrapper {
+  background-color: #2E5180;
+}
+
+.book-1 .feature__wrapper__textbox {
+  color: #ffffff;
+  text-align: center;
+  padding: 65px 0;
+}
+
+.book-1 .feature__wrapper__textbox h2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.book-1 .feature__wrapper__textbox p {
+  margin-top: 35px;
 }
 /*# sourceMappingURL=style.css.map */
