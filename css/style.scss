@@ -25,6 +25,16 @@ a {
   }
 
 }
+.heading-h3 {
+  font-weight: 600;
+  font-size:20px;
+  line-height: 1.8;
+
+  @include pc {
+    font-size: 30px;
+  }
+
+}
 
 // header start
 .header {
@@ -120,6 +130,7 @@ a {
   }
 }
 // hero end
+// feathre start
 .feature__wrapper {
   background-color: $primary;
 
@@ -138,4 +149,44 @@ a {
   }
 
 }
+// feathre end
+// products start
+.services__wrapper {
+
+  &__heading {
+    color: $primary;
+    padding: 65px 0;
+    text-align: center;
+    h2 {
+      border-bottom: 3px dotted;
+      padding-bottom:10px ;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+  &__flexwrapper {
+    text-align: center;
+    color: $dark-gray;
+    &__service{
+      &__info {
+        padding:30px 25px;
+        p {
+          font-size: 12px;
+        }
+      }
+      .btn {
+        color: $primary;
+        border: $primary 3px solid;
+        border-radius: 20px;
+        text-decoration: none;
+        padding: 5px 70px;
+        display: inline-block;
+        margin-top: 20px;
+      }
+    }
+  }
+
+}
+// products end
 }

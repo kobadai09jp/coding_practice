@@ -134,6 +134,18 @@
   }
 }
 
+.book-1 .heading-h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+@media (min-width: 880px) {
+  .book-1 .heading-h3 {
+    font-size: 30px;
+  }
+}
+
 .book-1 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,5 +288,43 @@
 
 .book-1 .feature__wrapper__textbox p {
   margin-top: 35px;
+}
+
+.book-1 .services__wrapper__heading {
+  color: #2E5180;
+  padding: 65px 0;
+  text-align: center;
+}
+
+.book-1 .services__wrapper__heading h2 {
+  border-bottom: 3px dotted;
+  padding-bottom: 10px;
+}
+
+.book-1 .services__wrapper__heading p {
+  margin-top: 10px;
+}
+
+.book-1 .services__wrapper__flexwrapper {
+  text-align: center;
+  color: #333333;
+}
+
+.book-1 .services__wrapper__flexwrapper__service__info {
+  padding: 30px 25px;
+}
+
+.book-1 .services__wrapper__flexwrapper__service__info p {
+  font-size: 12px;
+}
+
+.book-1 .services__wrapper__flexwrapper__service .btn {
+  color: #2E5180;
+  border: #2E5180 3px solid;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 5px 70px;
+  display: inline-block;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
