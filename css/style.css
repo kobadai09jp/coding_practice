@@ -122,6 +122,18 @@
   margin: 0 auto;
 }
 
+.book-1 .heading-h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+@media (min-width: 880px) {
+  .book-1 .heading-h2 {
+    font-size: 36px;
+  }
+}
+
 .book-1 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,11 +272,6 @@
   color: #ffffff;
   text-align: center;
   padding: 65px 0;
-}
-
-.book-1 .feature__wrapper__textbox h2 {
-  font-size: 24px;
-  line-height: 1.5;
 }
 
 .book-1 .feature__wrapper__textbox p {

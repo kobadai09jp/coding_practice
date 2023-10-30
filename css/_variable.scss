@@ -19,9 +19,27 @@ $tab: 760px;
 $pc: 880px;
 
 
-
-@mixin media ($breakpoint) {
-  @media (min-width:$breakpoint) {
+@mixin pc {
+  @media (min-width: ($pc)) {
     @content;
   }
 }
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (min-width: ($sp)) {
+    @content;
+  }
+}
+
+
+
+
+// @mixin media ($breakpoint) {
+//   @media (min-width:$breakpoint) {
+//     @content;
+//   }
+// }
