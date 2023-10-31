@@ -169,8 +169,14 @@ a {
     text-align: center;
     color: $dark-gray;
     &__service{
+      &:not(:first-child) {
+        margin-top: 65px;;
+      }
+      &:last-child {
+        margin-bottom: 65px;;
+      }
       &__info {
-        padding:30px 25px;
+        padding:30px 25px 0;
         p {
           font-size: 12px;
         }
@@ -178,11 +184,12 @@ a {
       .btn {
         color: $primary;
         border: $primary 3px solid;
-        border-radius: 20px;
+        border-radius: 30px;
         text-decoration: none;
-        padding: 5px 70px;
+        padding: 15px 70px;
         display: inline-block;
         margin-top: 20px;
+        font-weight: bold;
       }
     }
   }
