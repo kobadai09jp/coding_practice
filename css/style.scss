@@ -19,6 +19,9 @@ a {
   font-weight: 900;
   font-size:24px;
   line-height: 1.5;
+  &--footer {
+    font-size: 16px;
+  }
 
   @include pc {
     font-size: 36px;
@@ -34,6 +37,10 @@ a {
     font-size: 30px;
   }
 
+}
+
+.sr-only {
+  display: none;
 }
 
 // header start
@@ -196,4 +203,63 @@ a {
 
 }
 // products end
+// contact :start
+.contact__wrapper {
+  background-color: $light-gray;
+  padding: 62px 0;
+  input , textarea {
+    width: 100%;
+  }
+  &__form {
+    &__text {
+      &:first-child {
+        margin-top: 50px;
+      }
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+      input, text, textarea {
+        border: $gray 1px solid;
+        &.submit {
+          background-color: $primary;
+          color: $white;
+          padding: 10px;
+      border-radius: 30px;
+      border: none;
+        }
+      }
+    }
+  }
+  
+}
+// Footer :start
+.footer__wrapper {
+background-color: $primary;
+color: $white;
+
+  &__head {
+    @include flexPrimary(row);
+    width: 258px;
+    img {
+      width: 45px
+    }
+  }
+  &__info {
+    @include flexPrimary(column);
+    align-items: start;
+    font-size: 12px;
+    padding: 20px;
+
+  }
+  &__sns {
+    @include flexPrimary(row);
+    width: 155px;
+    margin: 0 auto;
+  }
+  .mod-footer-flex {
+    @include flexPrimary(column);
+    padding: 40px 0;
+  }
+}
+// Footer :end
 }

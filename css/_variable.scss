@@ -13,6 +13,13 @@ $white:#ffffff;
   flex-direction: $direction;
 }
 
+@mixin flexSecandary ($direction) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: $direction;
+}
+
 // breakpoint
 $sp: 575px;
 $tab: 760px;
