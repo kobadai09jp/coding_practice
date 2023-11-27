@@ -19,6 +19,13 @@
       <button type="button" class="header__btn">
         <span class="header__btn__sponly">MENU</span>
       </button>
+      <nav class="header__wrapper__pcitems">
+        <ul class="header__wrapper__pcitems__ul">
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a class="contact_us" href="#">お問合せ</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- header end -->
     <!-- hero start -->
@@ -36,7 +43,7 @@
     <section class="feature__wrapper">
       <div class="feature__wrapper__textbox container">
         <h2 class="heading-h2">
-          ビジネスアシスタントとして サポートを続けて20年
+          ビジネスアシスタントとして<br class="sp-none" />サポートを続けて20年
         </h2>
         <p>
           プロのビジネスアシスタントとして独立後、さまざまなお客様からご依頼をいただき、多様な業務、事業、効率化などのサポートを行ってきました。得意分野が多岐にわたるスタッフが揃っていますので、必要に応じてどのような業務にも対応いたし、雑事に振り回されることなく、重要な案件に取り組んでいただくことを目指しています。
@@ -86,61 +93,67 @@
     <!-- services end -->
     <!-- contanc start -->
     <section class="contact__wrapper">
-      <div class="container">
-        <h2 class="heading-h2">お問い合わせ</h2>
-        <p>
-          もっと業務を効率化したい マネージメントの煩わしさから開放されたい
-          本業に集中したいなどなど、
-          些細なことでもお気軽にお問い合わせください。
-        </p>
-        <form class="contact__wrapper__form">
-          <p class="contact__wrapper__form__text">
-            <label for="">
-              <span class="sr-only">名前</span>
-              <input type="text" name="name" placeholder="名前" />
-            </label>
+      <div class="container mod-flex">
+        <div>
+          <h2 class="heading-h2">お問い合わせ</h2>
+          <p>
+            もっと業務を効率化したい マネージメントの煩わしさから開放されたい
+            本業に集中したいなどなど、
+            些細なことでもお気軽にお問い合わせください。
           </p>
-          <p class="contact__wrapper__form__text">
-            <label for="">
-              <span class="sr-only">メールアドレス</span>
-              <input type="email" name="email" placeholder="メールアドレス" />
-            </label>
-          </p>
-          <p class="contact__wrapper__form__text">
-            <label for="">
-              <span class="sr-only">メッセージ</span>
-              <textarea
-                name="msg"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="メッセージを入力してください。"
-              ></textarea>
-            </label>
-          </p>
-          <p class="contact__wrapper__form__text">
-            <input class="submit" type="submit" value="送信" />
-          </p>
-        </form>
+        </div>
+        <div>
+          <form class="contact__wrapper__form">
+            <p class="contact__wrapper__form__text">
+              <label for="">
+                <span class="sr-only">名前</span>
+                <input type="text" name="name" placeholder="名前" />
+              </label>
+            </p>
+            <p class="contact__wrapper__form__text">
+              <label for="">
+                <span class="sr-only">メールアドレス</span>
+                <input type="email" name="email" placeholder="メールアドレス" />
+              </label>
+            </p>
+            <p class="contact__wrapper__form__text">
+              <label for="">
+                <span class="sr-only">メッセージ</span>
+                <textarea
+                  name="msg"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="メッセージを入力してください。"
+                ></textarea>
+              </label>
+            </p>
+            <p class="contact__wrapper__form__text">
+              <input class="submit" type="submit" value="送信" />
+            </p>
+          </form>
+        </div>
       </div>
     </section>
     <!-- contact end -->
     <!-- footer start -->
     <footer class="footer__wrapper">
       <div class="container mod-footer-flex">
-        <ul class="footer__wrapper__head">
-          <li>
-            <img src="./practice01/img/bb-white.png" alt="logo" />
-          </li>
-          <li>
-            <h2 class="heading-h2--footer">BB アシスタントカンパニー</h2>
-          </li>
-        </ul>
-        <ul class="footer__wrapper__info">
-          <li>〒901-3125</li>
-          <li>沖縄県島尻郡久米島町字鳥島グスク</li>
-          <li>0997-1234-5678</li>
-        </ul>
+        <div class="mod-flex">
+          <ul class="footer__wrapper__head">
+            <li>
+              <img src="./practice01/img/bb-white.png" alt="logo" />
+            </li>
+            <li>
+              <h2 class="heading-h2--footer">BB アシスタントカンパニー</h2>
+            </li>
+          </ul>
+          <ul class="footer__wrapper__info">
+            <li>〒901-3125</li>
+            <li>沖縄県島尻郡久米島町字鳥島グスク</li>
+            <li>0997-1234-5678</li>
+          </ul>
+        </div>
         <ul class="footer__wrapper__sns">
           <li>
             <img src="./practice01/img/logo-twitter.png" alt="twitter" />
